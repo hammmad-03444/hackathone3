@@ -1,0 +1,11 @@
+﻿Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC-001,Homepage,Load the website > Show the UI,Show UI early,Show the UI late,Passed,Low,developer,Show the UI very late which affects the performance of the webiste
+TC-002,Validate product listing page,Open product page > Verify products,Products displayed correctly,Products displayed correctly,Passed,Low,-,No issues found
+TC-003,Test API error handling,Disconnect API > Refresh page,Show fallback UI with error message,Error message shown,Passed,Medium,,Handled gracefully
+TC-004,Check cart functionality,Add product to cart > Verify cart contents,Cart updates as expected,Cart updates with added product,Passed,High,,Works as expected
+TC-005,Ensure responsiveness on mobile,Resize browser window > Check layout,Layout adjusts properly to screen size,Responsive layout working as intended,Passed,Medium,,Test successful
+TC-006,Clicking on a product should open the dynamic product page,Click on a product from the homepage,Product page should load with correct details,Product page  load with correct details but takes too long to display UI,Failed,Major,,UI lag issue
+TC-007,"Clicking ""Add to Cart"" should update the cart count","Click ""Add to Cart"" on a product",Cart count should increase,Cart updates with added product,Passed,Medium,,Handled gracefully
+TC-009,"Clicking ""Place Order""","Cart>Click ""Place Order""",Should drop the product to my sanity ,Do not droping the product order in my sanity,In Progress,,,Needs Debugging
+TC-010,Lighthouse performance score should be above 90%,Run Lighthouse audit,Performance score should be >90%,Score is 35%,Failed,Critical,,Needs Optimization
+TC-011,Admin Dashboard,"login to dashboard>show all the stats, orders and user data ",Show every thing which is related to our website,In progress,In Progress,Major,,In Progress
