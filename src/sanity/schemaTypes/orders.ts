@@ -36,6 +36,20 @@ export default ({
               type: "string",
               validation: (Rule:Rule) => Rule.required().error("Product name is required")
             },
+            
+    {
+      name: "status",
+      title: "Order Status",
+      type: "string",
+      options: {
+        list: [
+          { title: "Pending", value: "Pending" },
+          { title: "Shipped", value: "Shipped" },
+          { title: "Delivered", value: "Delivered" },
+        ],
+      },
+      initialValue: "Pending", // Default status when order is created
+    },
             {
               name: "price",
               title: "Price",
